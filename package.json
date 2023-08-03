@@ -4,8 +4,7 @@
   "version": "0.0.2-0",
   "type": "module",
   "files": [
-    "dist",
-    "index.d.ts"
+    "dist"
   ],
   "bin": {
     "skaf": "./dist/skaf.js"
@@ -28,7 +27,8 @@
     "vite": "4.4.8",
     "vite-plugin-dts": "3.4.0"
   },
-  "dependencies": {
-    "skaf": "0.0.1-0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frondor/skaf.git"
   }
 }
