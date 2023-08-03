@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
+import shebang from 'rollup-plugin-preserve-shebang';
 
 export default defineConfig({
   build: {
@@ -12,6 +13,9 @@ export default defineConfig({
     dts({
       include: 'lib/**/*.ts',
       rollupTypes: true,
+    }),
+    shebang({
+      shebang: '#!/usr/bin/env node',
     }),
   ],
 });
