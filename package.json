@@ -1,0 +1,30 @@
+{
+  "name": "skaf",
+  "private": false,
+  "version": "0.0.0-beta-1",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "bin": {
+    "skaf": "./dist/skaf.js"
+  },
+  "main": "./dist/skaf.umd.cjs",
+  "module": "./dist/skaf.js",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    "types": "./dist/types.d.ts",
+    "import": "./dist/skaf.js",
+    "require": "./dist/skaf.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "typescript": "5.1.6",
+    "vite": "4.4.8",
+    "vite-plugin-dts": "3.4.0"
+  }
+}
